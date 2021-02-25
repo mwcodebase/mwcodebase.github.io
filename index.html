@@ -2,10 +2,20 @@
 <html>
 
 <head>
-	<title>Future Imperfect by HTML5 UP</title>
+	<title>Welcome</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="jquery.js"></script>
+	<script>
+		$(function () {
+			var includes = $('[data-include]')
+			$.each(includes, function () {
+				var file = 'views/' + $(this).data('include') + '.html'
+				$(this).load(file)
+			})
+		})
+	</script>
 </head>
 
 <body class="is-preload">
@@ -14,79 +24,10 @@
 	<div id="wrapper">
 
 		<!-- Header -->
-		<header id="header">
-			<h1><a href="index.html">Future Imperfect</a></h1>
-			<nav class="links">
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Experience</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Resume</a></li>
-				</ul>
-			</nav>
-			<nav class="main">
-				<ul>
-					<li class="search">
-						<a class="fa-search" href="#search">Search</a>
-						<form id="search" method="get" action="#">
-							<input type="text" name="query" placeholder="Search" />
-						</form>
-					</li>
-					<li class="menu">
-						<a class="fa-bars" href="#menu">Menu</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<div data-include="header"></div>
 
 		<!-- Menu -->
-		<section id="menu">
-
-			<!-- Search -->
-			<section>
-				<form class="search" method="get" action="#">
-					<input type="text" name="query" placeholder="Search" />
-				</form>
-			</section>
-
-			<!-- Links -->
-			<section>
-				<ul class="links">
-					<li>
-						<a href="#">
-							<h3>Lorem ipsum</h3>
-							<p>Feugiat tempus veroeros dolor</p>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<h3>Dolor sit amet</h3>
-							<p>Sed vitae justo condimentum</p>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<h3>Feugiat veroeros</h3>
-							<p>Phasellus sed ultricies mi congue</p>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<h3>Etiam sed consequat</h3>
-							<p>Porta lectus amet ultricies</p>
-						</a>
-					</li>
-				</ul>
-			</section>
-
-			<!-- Actions -->
-			<section>
-				<ul class="actions stacked">
-					<li><a href="#" class="button large fit">Log In</a></li>
-				</ul>
-			</section>
-
-		</section>
+		<div data-include="menu"></div>
 
 		<!-- Main -->
 		<div id="main">
