@@ -9,12 +9,12 @@
 	<script src="jquery.js"></script>
 	<script>
 		$(function () {
-			var includes = $('[data-include]')
+			var includes = $('[data-include]');
 			$.each(includes, function () {
-				var file = 'views/' + $(this).data('include') + '.html'
-				$(this).load(file)
-			})
-		})
+				var file = 'views/' + $(this).data('include') + '.html';
+				$(this).load(file);
+			});
+		});
 	</script>
 </head>
 
