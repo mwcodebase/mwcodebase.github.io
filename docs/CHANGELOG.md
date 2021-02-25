@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.2] - 2020-02-23
 ### Changes
- - Added projects directory
- - Added Prius upgrade project
+ - Revamped home page (based on HTML5UP template)
+ - Added prius upgrade project
  - Added README
 
 ## [0.0.1] - 2021-02-03
