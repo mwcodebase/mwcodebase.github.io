@@ -1,36 +1,61 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en-US">
 
 <head>
-  <title>Projects</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <script src="/assets/js/jquery.min.js"></script>
-  <script src="/assets/js/browser.min.js"></script>
-  <script src="/assets/js/breakpoints.min.js"></script>
-  <script src="/assets/js/util.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <script>
-    $(function () {
-      var includes = $('[data-include]');
-      $.each(includes, function () {
-        var file = '/views/' + $(this).data('include') + '.html';
-        $(this).load(file);
-      });
-    });
-  </script>
+	<title>Experience</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/browser.min.js"></script>
+	<script src="/assets/js/breakpoints.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<script src="/assets/js/main.js"></script>
+	<script>
+		$(function () {
+			var includes = $('[data-include]');
+			$.each(includes, function () {
+				var file = '/views/' + $(this).data('include') + '.html';
+				$(this).load(file);
+			});
+		});
+	</script>
 </head>
 
-<body>
+<body class="single is-preload">
 
-  <h1>My projects</h1>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-  <p>
-    If you're here, then I think this is working. If it's not working, then how did you get here?
-    And finally, if you're not here... then I have questions.
-    Anyways, checkout my <a href="projects/pimp-my-prius.html">Prius upgrade project</a>
-  </p>
+		<!-- Header -->
+		<div data-include="header"></div>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="#">Say something!</a></h2>
+						<p>Anything!</p>
+					</div>
+				</header>
+				<span class="image featured"><img src="images/template/pic01.jpg" alt="" /></span>
+				<p>
+					Blarg.
+				</p>
+				<p>
+					I suppose that counts.
+				</p>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-include="footer"></div>
+
+	</div>
 
 </body>
 
